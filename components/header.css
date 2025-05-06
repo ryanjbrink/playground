@@ -1,0 +1,12 @@
+/* Header Component */
+.header {
+    background-color: var(--neutral-900);
+    color: var(--neutral-100);
+    padding: 1rem;
+    text-align: center;
+}
+
+.header h1 {
+    font-family: var(--font-h1);
+    font-size: var(--font-size-h1);
+}

@@ -1,15 +1,15 @@
+/* Typography */
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--font-h3);
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: var(--neutral-100);
     color: #333;
 }
 
 header {
-    background: #333;
-    color: #fff;
+    color: #fefefe; /* Neutral-100 */
     padding: 1rem 0;
     text-align: center;
 }
@@ -19,24 +19,193 @@ main {
     text-align: center;
 }
 
+section {
+    margin-bottom: 2rem;
+}
+
 button {
-    background: #333;
-    color: #fff;
+    background: #217e03; /* CTA-600 */
+    color: #fefefe; /* Neutral-100 */
     border: none;
     padding: 0.5rem 1rem;
     cursor: pointer;
+    border-radius: 4px; /* T - 4 */
 }
 
 button:hover {
-    background: #555;
+    background: #124702; /* CTA-800 */
 }
 
 footer {
     text-align: center;
     padding: 1rem 0;
-    background: #333;
-    color: #fff;
+    color: #fefefe; /* Neutral-100 */
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+/* Headings */
+h1 {
+    font-size: 36px; /* H - 36 */
+    line-height: 44px; /* XH - 44 */
+    font-family: 'Manrope', sans-serif;
+}
+
+h2 {
+    font-size: 32px; /* XG - 32 */
+    line-height: 36px; /* H - 36 */
+    font-family: 'Manrope', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Manrope', sans-serif;
+}
+
+h3, h4 {
+    font-size: 20px; /* L - 20 */
+    line-height: 22px; /* XL - 22 */
+    font-family: 'Manrope', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #f3f3f3; /* Neutral-300 */
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 4px; /* T - 4 */
+}
+
+form label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #cccccc; /* Neutral-400 */
+    border-radius: 4px; /* T - 4 */
+}
+
+/* Material Design Components with Tokens */
+
+:root {
+    /* Color Tokens */
+    --neutral-100: #fefefe;
+    --neutral-200: #f9f9f9;
+    --neutral-300: #f3f3f3;
+    --cta-600: #217e03;
+    --cta-800: #124702;
+    --danger-600: #ce3025;
+    --success-600: #007e2a;
+
+    /* Typography Tokens */
+    --font-h1: 'Manrope', sans-serif;
+    --font-h2: 'Manrope', sans-serif;
+    --font-h3: 'Manrope', sans-serif;
+    --font-size-h1: 36px;
+    --font-size-h2: 32px;
+    --font-size-h3: 20px;
+}
+
+/* Global Styles */
+:root {
+    --neutral-100: #fefefe;
+    --neutral-300: #f3f3f3;
+    --cta-600: #217e03;
+    --cta-800: #124702;
+    --font-h1: 'Manrope', sans-serif;
+    --font-h2: 'Manrope', sans-serif;
+    --font-h3: 'Manrope', sans-serif;
+    --font-size-h1: 36px;
+    --font-size-h2: 32px;
+    --font-size-h3: 20px;
+    --border-radius: 4px;
+}
+
+/* Button Component */
+.button {
+    font-family: var(--font-h2);
+    font-size: var(--font-size-h3);
+    background-color: var(--cta-600);
+    color: var(--neutral-100);
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: var(--cta-800);
+}
+
+/* Card Component */
+.card {
+    background-color: var(--neutral-100);
+    border: 1px solid var(--neutral-300);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    font-family: var(--font-h1);
+    font-size: var(--font-size-h2);
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-family: var(--font-h3);
+    font-size: var(--font-size-h3);
+    color: var(--neutral-300);
+}
+
+/* Customizing Carbon Design System with Tokens */
+:root {
+    --neutral-100: #fefefe;
+    --neutral-300: #f3f3f3;
+    --cta-600: #217e03;
+    --cta-800: #124702;
+    --font-h1: 'Manrope', sans-serif;
+    --font-h2: 'Manrope', sans-serif;
+    --font-h3: 'Manrope', sans-serif;
+    --font-size-h1: 36px;
+    --font-size-h2: 32px;
+    --font-size-h3: 20px;
+    --border-radius: 4px;
+}
+
+.bx--header {
+    background-color: var(--neutral-300);
+    color: var(--neutral-100);
+}
+
+.bx--btn--primary {
+    background-color: var(--cta-600);
+    color: var(--neutral-100);
+}
+
+.bx--btn--primary:hover {
+    background-color: var(--cta-800);
+}
+
+.bx--tile {
+    background-color: var(--neutral-100);
+    border: 1px solid var(--neutral-300);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+}
+
+.bx--footer {
+    background-color: var(--neutral-300);
+    color: var(--neutral-100);
+    text-align: center;
+    padding: 1rem;
 }

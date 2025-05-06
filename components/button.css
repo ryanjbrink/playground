@@ -1,0 +1,16 @@
+/* Button Component */
+.button {
+    font-family: var(--font-h2);
+    font-size: var(--font-size-h3);
+    background-color: var(--cta-600);
+    color: var(--neutral-100);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: var(--cta-800);
+}

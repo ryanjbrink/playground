@@ -1,0 +1,20 @@
+/* Card Component */
+.card {
+    background-color: var(--neutral-100);
+    border: 1px solid var(--neutral-300);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    font-family: var(--font-h1);
+    font-size: var(--font-size-h2);
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-family: var(--font-h3);
+    font-size: var(--font-size-h3);
+    color: var(--neutral-300);
+}

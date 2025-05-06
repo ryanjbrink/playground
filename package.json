@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "carbon-components": "^11.66.1",
+    "carbon-components-react": "^8.67.1"
+  }
+}
